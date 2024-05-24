@@ -1,0 +1,17 @@
+# Enable Home Assistant API
+api:
+  encryption:
+    key: ${esplink_microvpn_privatekey}
+
+time:
+  - platform: sntp
+
+wireguard:
+  # User Configuration
+  private_key: ${esplink_microvpn_privatekey}
+  address: ${esplink_microvpn_address}
+
+  # ESPLink Supplied Configuration
+  peer_endpoint: test.vpn.esplink.app
+  peer_public_key: Ep/Bw8lqBjr6e1wKjzqS37n0bYXAHypw8y3LWF1nTXE=
+  peer_persistent_keepalive: 15s

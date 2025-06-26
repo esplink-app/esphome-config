@@ -8,6 +8,7 @@ time:
 
 substitutions:
   config: configs/${esplink_microvpn_namespace}.yaml
+  key: keys/${esplink_microvpn_namespace}.pub
 
 
 wireguard:
@@ -17,6 +18,6 @@ wireguard:
 
   # ESPLink Supplied Configuration
   peer_endpoint: ${esplink_microvpn_namespace}.vpn.esplink.app
-  peer_public_key: !include keys/${esplink_microvpn_namespace}.pub
+  peer_public_key: !include ${key}
   peer_persistent_keepalive: 15s
   <<: !include ${config}

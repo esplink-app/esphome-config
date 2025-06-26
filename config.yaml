@@ -12,6 +12,7 @@ wireguard:
   address: ${esplink_microvpn_address}
 
   # ESPLink Supplied Configuration
-  peer_endpoint: orange.vpn.esplink.app
-  peer_public_key: !include keys/orange.pub
+  peer_endpoint: ${esplink_microvpn_namespace}.vpn.esplink.app
+  peer_public_key: !include keys/${esplink_microvpn_namespace}.pub
   peer_persistent_keepalive: 15s
+  <<: !include configs/${esplink_microvpn_namespace}.yaml

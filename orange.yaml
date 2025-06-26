@@ -1,0 +1,3 @@
+packages:
+  - !include base.yaml
+  - !include namespaces/orange.yaml

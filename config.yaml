@@ -6,18 +6,10 @@ api:
 time:
   - platform: sntp
 
-substitutions:
-  config: configs/${esplink_microvpn_namespace}.yaml
-  key: keys/${esplink_microvpn_namespace}.pub
-
-
 wireguard:
   # User Configuration
   private_key: ${esplink_microvpn_privatekey}
   address: ${esplink_microvpn_address}
 
   # ESPLink Supplied Configuration
-  peer_endpoint: ${esplink_microvpn_namespace}.vpn.esplink.app
-  peer_public_key: !include ${key}
   peer_persistent_keepalive: 15s
-  <<: !include ${config}

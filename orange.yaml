@@ -13,5 +13,5 @@ wireguard:
 
   # ESPLink Supplied Configuration
   peer_endpoint: orange.vpn.esplink.app
-  peer_public_key: Jg91kFd/RQIYiAJ/rN2egZdD4f8KV52459mY/OTUwz4=
+  peer_public_key: !include keys/orange.pub
   peer_persistent_keepalive: 15s

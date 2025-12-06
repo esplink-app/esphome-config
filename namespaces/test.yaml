@@ -1,0 +1,4 @@
+wireguard:
+  peer_endpoint: test.vpn.esplink.app
+  peer_port: 51820
+  peer_public_key: !include ../keys/test.pub

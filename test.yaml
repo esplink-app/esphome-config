@@ -15,3 +15,4 @@ wireguard:
   peer_endpoint: test.vpn.esplink.app
   peer_public_key: Ep/Bw8lqBjr6e1wKjzqS37n0bYXAHypw8y3LWF1nTXE=
   peer_persistent_keepalive: 15s
+  netmask: 255.255.255.0

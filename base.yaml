@@ -13,3 +13,4 @@ wireguard:
 
   # ESPLink Supplied Configuration
   peer_persistent_keepalive: 15s
+  netmask: 255.255.255.0

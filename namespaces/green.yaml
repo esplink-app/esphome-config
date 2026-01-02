@@ -1,0 +1,5 @@
+wireguard:
+  peer_endpoint: green.vpn.esplink.app
+  peer_port: 51820
+  # green is for now not a "real" namespace and shares a backend with test
+  peer_public_key: !include ../keys/test.pub

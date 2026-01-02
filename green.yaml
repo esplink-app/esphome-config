@@ -1,0 +1,3 @@
+packages:
+  base: !include base.yaml
+  namespace: !include namespaces/green.yaml
